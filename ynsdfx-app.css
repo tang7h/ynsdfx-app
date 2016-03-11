@@ -1,0 +1,344 @@
+@font-face {
+	font-family: icon;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	/*overflow: hidden;*/
+	color: rgba(0,0,0,.87);
+	background: rgba(0,0,0,.05);
+	/*font: 16px / 1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;*/
+	/*font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;*/
+	font-family: PingHei, 'PingFang SC', 'Helvetica Neue', Helvetica, STHeitiSC-Light, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #1788e8;
+}
+svg {
+	fill: currentcolor;
+	vertical-align: text-top;
+	width: 1.5em;
+	height: 1.5em;
+}
+.page {
+	width: 100%;
+	border-top: 2px solid #1788E8;/*flyme blue*/
+	border: none;
+	padding-top: 44px;
+	padding-bottom: 73px;
+}
+.page:nth-of-type(2) {
+	border-color: orange;
+}
+.page:nth-of-type(3) {
+	border-color: tomato;
+}
+.page:nth-of-type(4) {
+	border-color: #333;
+}
+
+.card {
+	border-radius: 2px;
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+	min-height: 200px;
+	margin: 8px;
+	position: relative;
+	background: #fff;
+}
+.card .content {
+	padding: 24px 16px 0px 16px;
+
+}
+.card .action-area {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.card-flat {
+	display: block;
+	border-bottom: .5px solid rgba(0,0,0,.12);
+	display: flex;
+	padding: 16px 16px 16px 16px;
+	flex-wrap: wrap;
+	background: #fff;
+}
+.card:after {/*细细的描边*/
+	/*content: '';*/
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	transform-origin: 0 0; 
+	transform: scale(.5);
+	top: 0;
+	left: 0;
+}
+.card h2 {
+	font-size: 24px;
+}
+.card .article-label {
+	font-size: .875rem;
+	color: rgba(0,0,0,.38);
+	margin: 8px 0;
+}
+.card p {
+	margin: 16px 0;
+}
+
+.flat-button {
+	display: inline-block;
+	line-height: 36px;
+	padding: 0 16px;
+	margin: 8px;
+	font-weight: 600;
+}
+.flat-button:hover, 
+.flat-button:active {
+	background: rgba(0,0,0,.12);
+}
+
+.tabs {
+	border: 1px solid;
+	border-radius: 4px;
+	overflow: hidden;
+	color: #1788e8;
+	font-size: .875rem;
+}
+.tabs a {
+	border-left: 1px solid;
+	line-height: 1;
+	margin-left: -1px;
+	padding: 6px 10px;
+	display: inline-block;
+	width: 77px;/*四个字的tab尺寸*/
+	text-align: center;
+}
+.tabs a:first-child {
+	background: #1788e8;
+	color: #fff;
+}
+
+.main-nav {
+	display: flex;
+	width: 100%;
+	padding: 4px 0;
+	position: fixed;
+	bottom: 0;
+	border-top: 1px solid #ddd;
+	background: #fff;
+	color: rgba(0,0,0,.38);
+}
+
+.main-nav input {
+	display: none;
+}
+.main-nav .nav-toggle {
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.main-nav input:checked+.nav-toggle {
+	color: #1788E8;
+}
+
+.nav-toggle svg {
+	width: 1.5em;
+	height: 1.5em;
+	fill: currentcolor;
+	flex: 1 0 100%;
+}
+
+.nav-toggle p {
+	font-size: 8px;
+	font-size: 1em;
+	transform: scale(.66);
+	/*display: none;*/
+	flex: 1 0 100%;
+	text-align: center;
+	line-height: 1;
+}
+.nav-toggle:checked a {
+	color: blue;
+}
+
+.top {
+	height: 44px;
+	font-size: 16px;
+	font-weight: 500;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	background: #fff;
+	border-bottom: .5px solid rgba(0,0,0,.1);
+	padding: 8px 16px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.top-transparent {
+	background: transparent;
+	border: none;
+}
+.top-white {
+	background: #fff;
+	border: none;
+}
+.top h1 {
+	font-size: 1em;
+	flex: 1;
+	font-weight: 700;
+	text-align: center;
+
+}
+.top .tabs+h1 {
+	display: none;/*如果有tabs就不再显示title*/
+}
+
+#nav-toggle-discover:checked {
+
+}
+
+/*article list*/
+.card-info {
+	display: flex;
+	flex-basis: 100%;
+	justify-content: space-between;
+	font-size: .875rem;
+	margin-bottom: 16px;
+	color: rgba(0,0,0,.38);
+}
+.card-user {
+	display: flex;
+	line-height: 1;
+	align-items: center;
+}
+.card-user-profile {
+	margin-right: 8px;
+}
+.card-user-profile img {
+	border-radius: 50%;
+}
+
+.card-tags {
+}
+
+.tag {
+	border: .5px solid rgba(0,0,0,.1);
+	padding: .1em .4em;
+	border-radius: 2px;
+}
+
+.card-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+.card-content h2 {
+	font-size: 1.2em;
+	font-weight: 600;
+	flex: 0 0 100%;
+	color: rgba(0,0,0,.87);
+}
+.card-content p {
+	font-size: 0.875rem;
+	color: rgba(0,0,0,.54);
+	margin: 8px 0;
+}
+.card-content img {
+	order: 3
+}
+
+.card-tools {
+	font-size: .875rem;
+	display: flex;
+	margin-top: 8px;
+	color: rgba(0,0,0,.38);
+}
+.card-tools span {
+	margin-right: 1em;
+	display: flex;
+}
+
+/*cell*/
+ul.cell {
+	margin-top: 16px;
+	border: .5px solid rgba(0,0,0,.12);
+	background: #fff;
+	overflow: hidden;
+	font-size: 16px;
+}
+
+ul.cell li {
+	padding: 16px;
+	padding-left: 0;
+	margin-left: 16px;
+	margin-top: -1px;
+	border-top: .5px solid rgba(0,0,0,.12);
+	display: flex;
+	justify-content: space-between;
+}
+ul.cell li p {
+	flex: 1 0 auto;
+	text-align: left;
+}
+ul.cell li p.cell-desc {
+	flex: 1 0 auto;
+	text-align: right;
+	color: rgba(0,0,0,.38);
+}
+
+ul.cell svg {
+	flex: 0 1 auto;
+	color: rgb(250,118,77);
+	margin-right: 1em;
+}
+ul.cell:last-child li:nth-child(1) svg {
+	color: rgb(87,161,235);
+}
+ul.cell:last-child li:nth-child(2) svg {
+	color: rgb(255,186,26);
+}
+ul.cell:last-child li:nth-child(3) svg {
+	color: rgb(122,209,100);
+}
+
+.card-profile {
+	display: flex;
+	justify-content: center;
+
+}
+.profile {
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 50%;
+	padding: 1em;
+	background: rgba(0,0,0,.1);
+	
+}
+.profile svg {
+	fill: #fff;
+	width: 40px;
+	height: 40px;
+	text-shadow: 0 0 1px rgba(0,0,0,.1);
+}
+.card-profile a {
+	flex: 1 0 100%;
+	text-align: center;
+	margin-top: 1em;
+	font-size: 16px;
+}
