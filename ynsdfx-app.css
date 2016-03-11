@@ -52,11 +52,12 @@ svg {
 
 .card {
 	border-radius: 2px;
-	box-shadow: 0 2px 4px rgba(0,0,0,.1);
 	min-height: 200px;
-	margin: 8px;
+	margin: 10px 8px;
 	position: relative;
 	background: #fff;
+	border: .5px solid rgba(0,0,0,.12);
+	box-shadow: 0 1px 8px rgba(0,0,0,.05);
 }
 .card .content {
 	padding: 24px 16px 0px 16px;
