@@ -28,7 +28,7 @@ ul {
 }
 a {
 	text-decoration: none;
-	color: #1A87ED;
+	color: #2979FF;
 }
 svg {
 	fill: currentcolor;
@@ -40,7 +40,7 @@ svg {
 	width: 100%;
 	height: 100%;
 	overflow-y: auto; 
-	border-top: 2px solid #1A87ED;/*flyme blue*/
+	border-top: 2px solid #2979FF;/*flyme blue*/
 	border: none;
 	padding-top: 48px;
 	padding-bottom: 73px;
@@ -49,17 +49,17 @@ svg {
 }
 #page-edit {
 	background: #fff;
-	z-index: 1;
 	position: fixed;
 	top: 0;
 	left: 0;
 	display: none;
-	transform: translateY(-100px);
-	opacity: .5;
-	height: 50px;
-	transition: all 3s;
-	animation: page .5s;
+	transform: translateY(-150px);
+	/*opacity: 0;*/
+	height: 0px;
 	overflow: hidden;
+	transition: all .5s;
+	/*animation: page .5s;*/
+	z-index: 8;
 }
 #page-edit.show {
 	display: block;
@@ -89,27 +89,18 @@ svg {
 
 }
 
-.page:nth-of-type(2) {
-	border-color: orange;
-}
-.page:nth-of-type(3) {
-	border-color: tomato;
-}
-.page:nth-of-type(4) {
-	border-color: #333;
-}
-
 .card {
 	border-radius: 2px;
-	min-height: 200px;
+	min-height: 160px;
 	margin: 10px 8px;
 	position: relative;
 	background: #fff;
 	border: .5px solid rgba(0,0,0,.12);
 	box-shadow: 0 1px 8px rgba(0,0,0,.05);
+	overflow: hidden;
 }
 .card .content {
-	padding: 24px 16px 0px 16px;
+	padding: 0 16px 8px 16px;
 
 }
 .card .action-area {
@@ -119,8 +110,10 @@ svg {
 .card.with-comment .action-area {
 	justify-content: space-between;
 	padding: 8px 16px;
-	font-size: 18px;
 } 
+.card .action-area .heart {
+	color: #FF8A80;
+}
 
 .card-flat {
 	display: block;
@@ -151,6 +144,10 @@ svg {
 	color: rgba(0,0,0,.38);
 	margin: 8px 0;
 }
+.card.notification .article-label {
+	font-size: 1em;
+	color: rgba(0,0,0,.54);
+}
 .card p {
 	margin: 16px 0;
 }
@@ -158,15 +155,30 @@ svg {
 	color: rgba(0,0,0,.54);
 	vertical-align: top;
 }
-
 .card-head {/*大头像卡片标题*/
 	flex: 1 0 100%;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	padding: 16px;
 	align-items: center;
+	background-image: url(http://www.bybutter.com/images/sec2-repeat.png); 
 
 }
+.card.notification .card-head {
+	padding: 8px 16px;
+	background-color: rgba(0,0,0,.05);
+}
+.card.notification:nth-child(2) .card-head {/*第一个元素是顶栏*/
+	background-color: #E3F2FD;
+	color: #2979FF;
+}.card.notification:nth-child(3) .card-head {
+	background-color: #FFF8E1;
+	color: #FFC400;
+}.card.notification:nth-child(4) .card-head {
+	background-color: #FFEBEE;
+	color: #F44336;
+}
+
 .card-head .card-profile {/*顶部头像*/
 	border-radius: 50%;
 	margin-right: 16px;
@@ -178,15 +190,46 @@ svg {
 .card-head-text {/*顶部用户信息*/
 	display: flex;
 	flex-wrap: wrap;
+	flex: 1 0;
 }
 .card .user-name {
 	flex: 1 0 100%;
 	font-size: .875em;
+	display: flex;
+	align-items: center;
+}
+.card .card-comments .user-name:before {
+	content: '';
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+	margin-right: 4px;
+	margin-bottom: 2px;/*为了平衡位置*/
+	background: #BBDEFB;
 }
 .card .user-desc {
 	font-size: .875em;
 	color: rgba(0,0,0,.54);
+}
+.user-desc {
+	color: rgba(0,0,0,.54);
+	display: flex;
+	align-items: center;
+}
 
+#page-edit .user-desc {
+	margin-left: 4px;
+}
+#page-edit .user-desc:before {
+	content: '';
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	border: 2px solid rgba(0,0,0,.38);
+	border-width: 2px 2px 0 0;
+	transform: rotate(45deg);
+	margin: 8px;
 }
 
 .card .user-name {
@@ -250,7 +293,7 @@ svg {
 	border: 1px solid;
 	border-radius: 4px;
 	overflow: hidden;
-	color: #1A87ED;
+	color: #2979FF;
 	font-size: .875rem;
 }
 .tabs a {
@@ -263,7 +306,7 @@ svg {
 	text-align: center;
 }
 .tabs a:first-child {
-	background: #1A87ED;
+	background: #2979FF;
 	color: #fff;
 }
 
@@ -289,11 +332,11 @@ svg {
 	color: rgba(0,0,0,.54);
 }
 .main-nav .nav-toggle.curr {
-	color: #1A87ED;
+	color: #2979FF;
 }
 
 .main-nav input:checked+.nav-toggle {
-	color: #1A87ED;
+	color: #2979FF;
 }
 
 .nav-toggle svg {
@@ -326,10 +369,11 @@ svg {
 	background: #fff;
 	border-bottom: .5px solid rgba(0,0,0,.1);
 	padding: 8px 16px;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 6;
 }
 .top-transparent {
 	background: transparent;
@@ -370,18 +414,39 @@ svg {
 }
 .card-user-profile {
 	margin-right: 8px;
+	border-radius: 50%;
+	overflow: hidden;
+	background: #90CAF9;
+	display: flex;
+	border: .5px solid rgba(0,0,0,.05)
 }
 .card-user-profile img {
-	border-radius: 50%;
+	/*border-radius: 50%;*/
+	visibility: hidden;
 }
 
 .card-tags {
 }
 
 .tag {
-	border: .5px solid rgba(0,0,0,.1);
+	border: .5px solid;
 	padding: .1em .4em;
 	border-radius: 2px;
+}
+.tag1 {
+	color: #4DD0E1;
+}
+.tag2 {
+	color: #81C784;
+}
+.tag3 {
+	color: #FFD54F;
+}
+.tag4 {
+	color: #FF8A65;
+}
+.tag5 {
+	color: #4FC3F7;
 }
 
 .card-content {
@@ -444,17 +509,20 @@ ul.cell li p.cell-desc {
 
 ul.cell svg {
 	flex: 0 1 auto;
-	color: rgb(250,118,77);
+	color: #fff;
+	border-radius: 50%;
+	padding: 4px;
+	background-color: rgb(250,118,77);
 	margin-right: 1em;
 }
 ul.cell:last-child li:nth-child(1) svg {
-	color: rgb(87,161,235);
+	background-color: rgb(87,161,235);
 }
 ul.cell:last-child li:nth-child(2) svg {
-	color: rgb(255,186,26);
+	background-color: rgb(255,186,26);
 }
 ul.cell:last-child li:nth-child(3) svg {
-	color: rgb(122,209,100);
+	background-color: rgb(122,209,100);
 }
 
 .card-profile {
@@ -489,6 +557,7 @@ ul.cell:last-child li:nth-child(3) svg {
 	padding: 24px;
 	border: none;
 	font-size: 18px;
+	outline: none;
 }
 .edit-area .tools {
 	padding: 8px 16px;
