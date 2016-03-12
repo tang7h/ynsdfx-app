@@ -8,35 +8,52 @@
 
 	<title>云南师大附小app</title>
 	<link rel="stylesheet" href="ynsdfx-app.css">
+	<script src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.min.js"></script>
 	<script src="holder.js"></script>
-	<script src="//cdn.bootcss.com/jquery/3.0.0-beta1/jquery.min.js"></script>
 	<script src="ynsdfx-app.js"></script>
 </head>
 <body>
 	<div class="page" id="page-1">
-		<div class="top top-transparent">
+		<div class="top">
 			<h1>首页</h1>
 		</div>
 
-		<div class="card">
+		<div class="card notification">
+			<div class="card-head">
+				<h2>公告</h2>
+				<div class="article-label">03/12</div>
+			</div>
 			<div class="content">
-				<h2>通知的标题</h2>
-				<div class="article-label">教务处 23分钟前</div>
-				<p>通知内容Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia totam voluptatibus error libero adipisci at veritatis, nulla</p>
+				<p>本届小博士论文评审活动、初评、复评工作已经完成。全校上传论文271篇，187篇被评为优秀论文。</p>
 			</div>
 			<div class="action-area">
-				<a class="flat-button">查看详细</a>
+				<!-- <a class="flat-button">查看详细</a> -->
 			</div>
 		</div>
 
-		<div class="card">
+		<div class="card notification">
+			<div class="card-head">
+				<h2>"吉祥物"评选通告</h2>
+				<div class="article-label">03/12</div>
+			</div>
 			<div class="content">
-				<h2>通知的标题</h2>
-				<div class="article-label">教务处 23分钟前</div>
-				<p>通知内容Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia totam voluptatibus error libero adipisci at veritatis, nulla</p>
+				<p> 我校“吉祥物”的投票评选在师生、家长的大力支持下已顺利结束第一轮投票。今日起将对第一轮投票中排名前30的参选作品进行第二轮投票，投票截止时间为10月9日，请广大师生和家长们继续积极参与，本着公开、公平、公正的原则，为学校评选“吉祥物”活动贡献力量。此外，第二轮投票结束，学校将聘请专业人士组成专家评审团，参考投票情况最终评选出我校的“吉祥物”。感谢师生、家长们的热情参与！</p>
 			</div>
 			<div class="action-area">
-				<a class="flat-button">查看详细</a>
+				<!-- <a class="flat-button">查看详细</a> -->
+			</div>
+
+		</div>
+			<div class="card notification">
+			<div class="card-head">
+				<h2>公告</h2>
+				<div class="article-label">03/12</div>
+			</div>
+			<div class="content">
+				<p>本届小博士论文评审活动、初评、复评工作已经完成。全校上传论文271篇（文林校区165篇，金安校区62篇，金牛校区44篇）。经家长评委和老师评委认真评议，187篇被评为优秀论文。其中106篇论文作者将参加答辩（文林校区59篇，金安校区27篇，金牛校区20篇）。</p>
+			</div>
+			<div class="action-area">
+				<!-- <a class="flat-button">查看详细</a> -->
 			</div>
 		</div>
 
@@ -47,9 +64,9 @@
 		<div class="top">
 			<div></div>
 			<div class="tabs">
-				<a href="#">所有</a><a href="#">年级新闻</a>
+				<a href="#">全部</a><a href="#">年级文章</a>
 			</div>
-			<h1>新闻</h1>
+			<h1>文章</h1>
 			<div></div>
 		</div>
 		<a class="card-flat">
@@ -58,31 +75,32 @@
 					<div class="card-user-profile">
 						<img src="holder.js/16x16?" alt="">
 					</div>
-					<span>张佳玮</span>
+					<span>五(6)班	杨茜婷</span>
 				</div>
 				<div class="card-tags">
-					<span class="tag">活动</span>
+					<span class="tag tag1">活动</span>
+					<span class="tag tag2">讲座</span>
 				</div>
 			</div>
 			<div class="card-content">
-				<h2>文章标题</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque commodi ut, nobis voluptas ex vero iste debitis repellendus deserunt laudantium aliquid! Architecto dolore, eius esse a rem. Quibusdam, natus, sequi.</p>
+				<h2>成长的季节</h2>
+				<p>正处于青春期的我们是家庭、学校、社会关注的焦点。面对繁杂的社会环境，加之自身成长中的各种变化，我们表现出了青春期的骚动、迷茫以及困惑。因此，学校于2016年3月9日开展了一次关于青春期——成长的季节讲座。</p>
 			</div>
 			<div class="card-tools">
 				<span>
-				<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M640 416 384 416C364.8 416 352 403.2 352 384S364.8 352 384 352l256 0c19.2 0 32 12.8 32 32S659.2 416 640 416z" />
-<path class="svgpath" data-index="path_1" d="M576 544 384 544C364.8 544 352 531.2 352 512S364.8 480 384 480l192 0c19.2 0 32 12.8 32 32S595.2 544 576 544z" />
-<path class="svgpath" data-index="path_2" d="M377.6 896c-6.4 0-6.4 0-12.8 0-12.8-6.4-19.2-19.2-19.2-32l0-128C211.2 684.8 128 569.6 128 448c0-179.2 172.8-320 384-320s384 140.8 384 320c0 172.8-166.4 313.6-371.2 320l-128 121.6C390.4 896 384 896 377.6 896zM512 192C332.8 192 192 307.2 192 448c0 102.4 76.8 192 192 236.8 12.8 6.4 19.2 19.2 19.2 32l0 76.8 83.2-76.8C492.8 704 505.6 704 512 704c179.2 0 320-115.2 320-256S691.2 192 512 192z" />
+					<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+						<path class="svgpath" data-index="path_0" d="M640 416 384 416C364.8 416 352 403.2 352 384S364.8 352 384 352l256 0c19.2 0 32 12.8 32 32S659.2 416 640 416z" />
+						<path class="svgpath" data-index="path_1" d="M576 544 384 544C364.8 544 352 531.2 352 512S364.8 480 384 480l192 0c19.2 0 32 12.8 32 32S595.2 544 576 544z" />
+						<path class="svgpath" data-index="path_2" d="M377.6 896c-6.4 0-6.4 0-12.8 0-12.8-6.4-19.2-19.2-19.2-32l0-128C211.2 684.8 128 569.6 128 448c0-179.2 172.8-320 384-320s384 140.8 384 320c0 172.8-166.4 313.6-371.2 320l-128 121.6C390.4 896 384 896 377.6 896zM512 192C332.8 192 192 307.2 192 448c0 102.4 76.8 192 192 236.8 12.8 6.4 19.2 19.2 19.2 32l0 76.8 83.2-76.8C492.8 704 505.6 704 512 704c179.2 0 320-115.2 320-256S691.2 192 512 192z" />
 
-</svg>
+					</svg>
 					350
 				</span>
 				<span>
-				<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M332.8 249.6c38.4 0 83.2 19.2 108.8 44.8L467.2 320 512 364.8 556.8 320l25.6-25.6c32-32 70.4-44.8 108.8-44.8 19.2 0 38.4 6.4 57.6 12.8 44.8 25.6 70.4 57.6 76.8 108.8 6.4 44.8-6.4 89.6-38.4 121.6L512 774.4 236.8 492.8C204.8 460.8 185.6 416 192 371.2c6.4-44.8 38.4-83.2 76.8-108.8C288 256 313.6 249.6 332.8 249.6L332.8 249.6M332.8 185.6C300.8 185.6 268.8 192 243.2 204.8 108.8 275.2 89.6 441.6 185.6 537.6l281.6 281.6C480 832 499.2 838.4 512 838.4s32-6.4 38.4-19.2l281.6-281.6c96-96 76.8-262.4-57.6-332.8-25.6-12.8-57.6-19.2-89.6-19.2-57.6 0-115.2 25.6-153.6 64L512 275.2 486.4 249.6C448 211.2 390.4 185.6 332.8 185.6L332.8 185.6z" />
+					<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+						<path class="svgpath" data-index="path_0" d="M332.8 249.6c38.4 0 83.2 19.2 108.8 44.8L467.2 320 512 364.8 556.8 320l25.6-25.6c32-32 70.4-44.8 108.8-44.8 19.2 0 38.4 6.4 57.6 12.8 44.8 25.6 70.4 57.6 76.8 108.8 6.4 44.8-6.4 89.6-38.4 121.6L512 774.4 236.8 492.8C204.8 460.8 185.6 416 192 371.2c6.4-44.8 38.4-83.2 76.8-108.8C288 256 313.6 249.6 332.8 249.6L332.8 249.6M332.8 185.6C300.8 185.6 268.8 192 243.2 204.8 108.8 275.2 89.6 441.6 185.6 537.6l281.6 281.6C480 832 499.2 838.4 512 838.4s32-6.4 38.4-19.2l281.6-281.6c96-96 76.8-262.4-57.6-332.8-25.6-12.8-57.6-19.2-89.6-19.2-57.6 0-115.2 25.6-153.6 64L512 275.2 486.4 249.6C448 211.2 390.4 185.6 332.8 185.6L332.8 185.6z" />
 
-</svg>
+					</svg>
 
 					15
 				</span>
@@ -95,236 +113,331 @@
 					<div class="card-user-profile">
 						<img src="holder.js/16x16?" alt="">
 					</div>
-					<span>张佳玮</span>
+					<span>文林六(10)班 施可若涵</span>
 				</div>
 				<div class="card-tags">
-					<span class="tag">活动</span>
+					<span class="tag tag3">感悟</span>
+					<span class="tag tag4">演讲</span>
 				</div>
 			</div>
 			<div class="card-content">
-				<h2>文章标题</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque commodi ut, nobis voluptas ex vero iste debitis repellendus deserunt laudantium aliquid! Architecto dolore, eius esse a rem. Quibusdam, natus, sequi.</p>
+				<h2>爱是力量——金牛二年级《开学第一课》主题班会</h2>
+				<p>新学期伊始，孩子们就像刚结束冬眠的小动物一样还没回过神儿，老师们决定用“爱”来上上这开学第一课，给他们“醒醒神儿”。于是一个名为“爱是力量”的主题班会就此在金牛校区二年级开展起来。会上，老师们从爱自己，爱父母，爱他们，爱国家等几个方面出发，用一个个生动而有趣的小故事和一曲《爱的奉献》让孩子深深明白了：爱是一种伟大的力量，做一个有爱心的人不仅可以让我们彼此感受温暖，更能让我们有足够的勇气去帮助他人，创造幸福。相信这样一次有意义的“第一课”，定能帮助孩子们学会宽容有爱，乐于奉献，成为受人欢迎的人！</p>
 			</div>
 			<div class="card-tools">
 				<span>
-				<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M640 416 384 416C364.8 416 352 403.2 352 384S364.8 352 384 352l256 0c19.2 0 32 12.8 32 32S659.2 416 640 416z" />
-<path class="svgpath" data-index="path_1" d="M576 544 384 544C364.8 544 352 531.2 352 512S364.8 480 384 480l192 0c19.2 0 32 12.8 32 32S595.2 544 576 544z" />
-<path class="svgpath" data-index="path_2" d="M377.6 896c-6.4 0-6.4 0-12.8 0-12.8-6.4-19.2-19.2-19.2-32l0-128C211.2 684.8 128 569.6 128 448c0-179.2 172.8-320 384-320s384 140.8 384 320c0 172.8-166.4 313.6-371.2 320l-128 121.6C390.4 896 384 896 377.6 896zM512 192C332.8 192 192 307.2 192 448c0 102.4 76.8 192 192 236.8 12.8 6.4 19.2 19.2 19.2 32l0 76.8 83.2-76.8C492.8 704 505.6 704 512 704c179.2 0 320-115.2 320-256S691.2 192 512 192z" />
+					<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+						<path class="svgpath" data-index="path_0" d="M640 416 384 416C364.8 416 352 403.2 352 384S364.8 352 384 352l256 0c19.2 0 32 12.8 32 32S659.2 416 640 416z" />
+						<path class="svgpath" data-index="path_1" d="M576 544 384 544C364.8 544 352 531.2 352 512S364.8 480 384 480l192 0c19.2 0 32 12.8 32 32S595.2 544 576 544z" />
+						<path class="svgpath" data-index="path_2" d="M377.6 896c-6.4 0-6.4 0-12.8 0-12.8-6.4-19.2-19.2-19.2-32l0-128C211.2 684.8 128 569.6 128 448c0-179.2 172.8-320 384-320s384 140.8 384 320c0 172.8-166.4 313.6-371.2 320l-128 121.6C390.4 896 384 896 377.6 896zM512 192C332.8 192 192 307.2 192 448c0 102.4 76.8 192 192 236.8 12.8 6.4 19.2 19.2 19.2 32l0 76.8 83.2-76.8C492.8 704 505.6 704 512 704c179.2 0 320-115.2 320-256S691.2 192 512 192z" />
 
-</svg>
-					350
+					</svg>
+					78
 				</span>
 				<span>
-				<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M332.8 249.6c38.4 0 83.2 19.2 108.8 44.8L467.2 320 512 364.8 556.8 320l25.6-25.6c32-32 70.4-44.8 108.8-44.8 19.2 0 38.4 6.4 57.6 12.8 44.8 25.6 70.4 57.6 76.8 108.8 6.4 44.8-6.4 89.6-38.4 121.6L512 774.4 236.8 492.8C204.8 460.8 185.6 416 192 371.2c6.4-44.8 38.4-83.2 76.8-108.8C288 256 313.6 249.6 332.8 249.6L332.8 249.6M332.8 185.6C300.8 185.6 268.8 192 243.2 204.8 108.8 275.2 89.6 441.6 185.6 537.6l281.6 281.6C480 832 499.2 838.4 512 838.4s32-6.4 38.4-19.2l281.6-281.6c96-96 76.8-262.4-57.6-332.8-25.6-12.8-57.6-19.2-89.6-19.2-57.6 0-115.2 25.6-153.6 64L512 275.2 486.4 249.6C448 211.2 390.4 185.6 332.8 185.6L332.8 185.6z" />
+					<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+						<path class="svgpath" data-index="path_0" d="M332.8 249.6c38.4 0 83.2 19.2 108.8 44.8L467.2 320 512 364.8 556.8 320l25.6-25.6c32-32 70.4-44.8 108.8-44.8 19.2 0 38.4 6.4 57.6 12.8 44.8 25.6 70.4 57.6 76.8 108.8 6.4 44.8-6.4 89.6-38.4 121.6L512 774.4 236.8 492.8C204.8 460.8 185.6 416 192 371.2c6.4-44.8 38.4-83.2 76.8-108.8C288 256 313.6 249.6 332.8 249.6L332.8 249.6M332.8 185.6C300.8 185.6 268.8 192 243.2 204.8 108.8 275.2 89.6 441.6 185.6 537.6l281.6 281.6C480 832 499.2 838.4 512 838.4s32-6.4 38.4-19.2l281.6-281.6c96-96 76.8-262.4-57.6-332.8-25.6-12.8-57.6-19.2-89.6-19.2-57.6 0-115.2 25.6-153.6 64L512 275.2 486.4 249.6C448 211.2 390.4 185.6 332.8 185.6L332.8 185.6z" />
 
-</svg>
+					</svg>
 
-					15
+					82
 				</span>
 			</div>
-		</a>
-	</div>
-
-	<div class="page" id="page-3">
-		<div class="top top-white"><a href="#">
-			<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-			<path class="svgpath" data-index="path_0" d="M819.2 787.2 204.8 787.2c-12.8 0-19.2-6.4-25.6-12.8s-6.4-19.2 0-32l57.6-115.2L236.8 448c0-115.2 76.8-224 185.6-262.4C428.8 147.2 467.2 115.2 512 115.2S595.2 147.2 601.6 192c108.8 38.4 185.6 140.8 185.6 262.4l0 179.2 57.6 115.2c6.4 6.4 6.4 19.2 0 32S832 787.2 819.2 787.2zM256 729.6l512 0-38.4-76.8c0-6.4-6.4-6.4-6.4-12.8L723.2 448c0-96-64-185.6-160-204.8C550.4 236.8 537.6 224 544 211.2c0 0 0-6.4 0-6.4 0-12.8-12.8-25.6-32-25.6S480 185.6 480 204.8c0 0 0 0 0 6.4 0 12.8-6.4 32-25.6 32C364.8 268.8 294.4 352 294.4 448l0 185.6c0 6.4 0 6.4-6.4 12.8L256 729.6z" />
-				<path class="svgpath" data-index="path_1" d="M422.4 819.2c0 51.2 38.4 89.6 89.6 89.6 51.2 0 89.6-38.4 89.6-89.6L422.4 819.2z" />
-			</svg>
-		</a>
-		<h1>心得</h1>
-		<a href="#"><svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M640 512 448 704l-102.4 19.2c0-12.8-6.4-25.6-19.2-38.4s-25.6-12.8-38.4-19.2l19.2-102.4 198.4-198.4c12.8-12.8 12.8-32 0-44.8s-32-12.8-44.8 0L256 531.2C256 537.6 249.6 544 249.6 550.4l-44.8 224c0 12.8 0 19.2 6.4 32 6.4 6.4 12.8 6.4 25.6 6.4 0 0 6.4 0 6.4 0L467.2 768c6.4 0 12.8-6.4 19.2-6.4l204.8-204.8c12.8-12.8 12.8-32 0-44.8S652.8 499.2 640 512z" />
-<path class="svgpath" data-index="path_1" d="M576 262.4c-12.8-12.8-32-12.8-44.8 0s-12.8 32 0 44.8l179.2 179.2c6.4 6.4 12.8 6.4 25.6 6.4s19.2 0 25.6-6.4c12.8-12.8 12.8-32 0-44.8L576 262.4z" />
-<path class="svgpath" data-index="path_2" d="M857.6 294.4l-134.4-134.4c-25.6-25.6-64-25.6-89.6 0L588.8 198.4C576 217.6 576 236.8 588.8 256l172.8 172.8c12.8 12.8 38.4 12.8 51.2 0L857.6 384C883.2 358.4 883.2 320 857.6 294.4z" />
-<path class="svgpath" data-index="path_3" d="M371.2 646.4c6.4 6.4 12.8 6.4 25.6 6.4s19.2 0 25.6-6.4l179.2-179.2c12.8-12.8 12.8-32 0-44.8s-32-12.8-44.8 0L371.2 601.6C358.4 614.4 358.4 633.6 371.2 646.4z" />
-
-</svg>
-
-		</a>
-	</div>
-		<div class="card with-comment">
-			<div class="card-head">
-				<div class="card-profile">
-					<img src="holder.js/56x56" alt="">
+		</a><a class="card-flat">
+		<div class="card-info">
+			<div class="card-user">
+				<div class="card-user-profile">
+					<img src="holder.js/16x16?theme=sky" alt="">
 				</div>
-				<div class="card-head-text">
-					<div class="user-name">Lorem</div>
-					<div class="user-desc">June 1, 2015</div>
-				</div>
+				<span>文林六(10)班 施可若涵</span>
 			</div>
-			<div class="card-content">
-				<p>内容</p>
-			</div>
-			<div class="action-area">
-				<a href="">
-					<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M780.8 204.8c-83.2-44.8-179.2-19.2-243.2 44.8L512 275.2 486.4 249.6c-64-64-166.4-83.2-243.2-44.8C108.8 275.2 89.6 441.6 185.6 537.6l32 32 153.6 153.6 102.4 102.4c25.6 25.6 57.6 25.6 83.2 0l102.4-102.4 153.6-153.6 32-32C934.4 441.6 915.2 275.2 780.8 204.8z" />
-
-</svg>
-
-				</a>
-				<a href=""></a>
-				<a href="">
-					<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M640 416 384 416C364.8 416 352 403.2 352 384S364.8 352 384 352l256 0c19.2 0 32 12.8 32 32S659.2 416 640 416z" />
-<path class="svgpath" data-index="path_1" d="M576 544 384 544C364.8 544 352 531.2 352 512S364.8 480 384 480l192 0c19.2 0 32 12.8 32 32S595.2 544 576 544z" />
-<path class="svgpath" data-index="path_2" d="M377.6 896c-6.4 0-6.4 0-12.8 0-12.8-6.4-19.2-19.2-19.2-32l0-128C211.2 684.8 128 569.6 128 448c0-179.2 172.8-320 384-320s384 140.8 384 320c0 172.8-166.4 313.6-371.2 320l-128 121.6C390.4 896 384 896 377.6 896zM512 192C332.8 192 192 307.2 192 448c0 102.4 76.8 192 192 236.8 12.8 6.4 19.2 19.2 19.2 32l0 76.8 83.2-76.8C492.8 704 505.6 704 512 704c179.2 0 320-115.2 320-256S691.2 192 512 192z" />
-</svg>
-				12</a>
-			</div>
-			<div class="card-comments">
-				<div class="user-name">Sandra Adams</div>
-				<div class="comment">Wow: This looks amazing. I'ms o excited to I'ms o excited to</div>
+			<div class="card-tags">
+				<span class="tag tag5">学习</span>
 			</div>
 		</div>
-	</div>
-
-	<div class="page" id="page-4">
-		<div class="top top-white"><a href="#">
-			<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-			<path class="svgpath" data-index="path_0" d="M819.2 787.2 204.8 787.2c-12.8 0-19.2-6.4-25.6-12.8s-6.4-19.2 0-32l57.6-115.2L236.8 448c0-115.2 76.8-224 185.6-262.4C428.8 147.2 467.2 115.2 512 115.2S595.2 147.2 601.6 192c108.8 38.4 185.6 140.8 185.6 262.4l0 179.2 57.6 115.2c6.4 6.4 6.4 19.2 0 32S832 787.2 819.2 787.2zM256 729.6l512 0-38.4-76.8c0-6.4-6.4-6.4-6.4-12.8L723.2 448c0-96-64-185.6-160-204.8C550.4 236.8 537.6 224 544 211.2c0 0 0-6.4 0-6.4 0-12.8-12.8-25.6-32-25.6S480 185.6 480 204.8c0 0 0 0 0 6.4 0 12.8-6.4 32-25.6 32C364.8 268.8 294.4 352 294.4 448l0 185.6c0 6.4 0 6.4-6.4 12.8L256 729.6z" />
-				<path class="svgpath" data-index="path_1" d="M422.4 819.2c0 51.2 38.4 89.6 89.6 89.6 51.2 0 89.6-38.4 89.6-89.6L422.4 819.2z" />
-			</svg>
-		</a>
-		<h1>我</h1>
-		<a href="#">
-			<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M742.4 844.8 742.4 844.8c-32 0-64-12.8-89.6-38.4l-160-160c-89.6 25.6-179.2 0-249.6-64C166.4 505.6 147.2 396.8 192 294.4c6.4-12.8 12.8-19.2 25.6-19.2 12.8 0 19.2 0 25.6 6.4l115.2 115.2 70.4-70.4L313.6 217.6C307.2 211.2 300.8 198.4 300.8 192c0-12.8 6.4-19.2 19.2-25.6 96-44.8 211.2-25.6 288 51.2 64 64 89.6 160 64 249.6L832 627.2c25.6 25.6 38.4 57.6 38.4 89.6 0 32-12.8 64-38.4 89.6C806.4 832 774.4 844.8 742.4 844.8zM499.2 582.4c6.4 0 19.2 6.4 25.6 6.4l172.8 172.8c12.8 12.8 25.6 19.2 44.8 19.2l0 0c19.2 0 32-6.4 44.8-19.2 12.8-12.8 19.2-25.6 19.2-44.8 0-19.2-6.4-32-19.2-44.8L614.4 499.2C601.6 492.8 601.6 473.6 608 467.2 633.6 396.8 614.4 320 563.2 262.4c-44.8-44.8-108.8-64-166.4-51.2l83.2 83.2c19.2 19.2 19.2 51.2 0 70.4L390.4 454.4C371.2 473.6 339.2 473.6 320 454.4L236.8 371.2C224 428.8 243.2 492.8 288 537.6c51.2 51.2 128 70.4 198.4 44.8C492.8 582.4 499.2 582.4 499.2 582.4z" />
-
-</svg>
-
-		</a>
-	</div>
-		<div class="card-flat card-profile">
-			<div class="profile">
+		<div class="card-content">
+			<h2>学习是自己的事</h2>
+			<p>3月7日上午，周校长在阶梯教室里为六年级的同学们上了一堂毕业动员会，主题是“学习是自己的事”。校长从“现状、责任、建议”三个方面为我们讲解，并提出建议： 1、要有勇气面对生活； 2、要确立目标、立即行动； 3、要坚持下去、证明自己；</p>
+		</div>
+		<div class="card-tools">
+			<span>
 				<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-				<path class="svgpath" data-index="path_0" d="M877.443978 872.455569c0 0-162.897363-82.738787-237.723501-88.071225l0-23.737947c119.721821-50.916177 195.064001-174.93835 195.064001-319.946246 0-190.075592-145.867966-344.544263-325.106669-344.544263s-325.106669 154.640685-325.106669 344.544263c0 146.728036 77.40635 271.954309 199.536368 321.666387l0 22.017806-1.548127 0c-69.493701 3.440282-235.315303 87.727196-235.315303 87.727196S125.570301 890.345036 127.978498 904.106165c2.408198 13.761129 14.793214 23.909961 29.070385 23.909961L423.154712 928.016126l177.346548 0 265.933815 0c14.277171 0 26.318159-9.804804 29.070385-23.393919C898.257685 891.033093 877.443978 872.455569 877.443978 872.455569z" />
+					<path class="svgpath" data-index="path_0" d="M640 416 384 416C364.8 416 352 403.2 352 384S364.8 352 384 352l256 0c19.2 0 32 12.8 32 32S659.2 416 640 416z" />
+					<path class="svgpath" data-index="path_1" d="M576 544 384 544C364.8 544 352 531.2 352 512S364.8 480 384 480l192 0c19.2 0 32 12.8 32 32S595.2 544 576 544z" />
+					<path class="svgpath" data-index="path_2" d="M377.6 896c-6.4 0-6.4 0-12.8 0-12.8-6.4-19.2-19.2-19.2-32l0-128C211.2 684.8 128 569.6 128 448c0-179.2 172.8-320 384-320s384 140.8 384 320c0 172.8-166.4 313.6-371.2 320l-128 121.6C390.4 896 384 896 377.6 896zM512 192C332.8 192 192 307.2 192 448c0 102.4 76.8 192 192 236.8 12.8 6.4 19.2 19.2 19.2 32l0 76.8 83.2-76.8C492.8 704 505.6 704 512 704c179.2 0 320-115.2 320-256S691.2 192 512 192z" />
+
 				</svg>
-			</div>
-			<a href="">微信登陆</a>
+				50
+			</span>
+			<span>
+				<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+					<path class="svgpath" data-index="path_0" d="M332.8 249.6c38.4 0 83.2 19.2 108.8 44.8L467.2 320 512 364.8 556.8 320l25.6-25.6c32-32 70.4-44.8 108.8-44.8 19.2 0 38.4 6.4 57.6 12.8 44.8 25.6 70.4 57.6 76.8 108.8 6.4 44.8-6.4 89.6-38.4 121.6L512 774.4 236.8 492.8C204.8 460.8 185.6 416 192 371.2c6.4-44.8 38.4-83.2 76.8-108.8C288 256 313.6 249.6 332.8 249.6L332.8 249.6M332.8 185.6C300.8 185.6 268.8 192 243.2 204.8 108.8 275.2 89.6 441.6 185.6 537.6l281.6 281.6C480 832 499.2 838.4 512 838.4s32-6.4 38.4-19.2l281.6-281.6c96-96 76.8-262.4-57.6-332.8-25.6-12.8-57.6-19.2-89.6-19.2-57.6 0-115.2 25.6-153.6 64L512 275.2 486.4 249.6C448 211.2 390.4 185.6 332.8 185.6L332.8 185.6z" />
+
+				</svg>
+
+				46
+			</span>
 		</div>
-		<ul class="cell">
-			<li>
-			<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M192 256l640 0c19.2 0 32-12.8 32-32S851.2 192 832 192L192 192C172.8 192 160 204.8 160 224S172.8 256 192 256z" />
-<path class="svgpath" data-index="path_1" d="M832 384 192 384C172.8 384 160 396.8 160 416S172.8 448 192 448l640 0c19.2 0 32-12.8 32-32S851.2 384 832 384z" />
-<path class="svgpath" data-index="path_2" d="M448 576 192 576C172.8 576 160 588.8 160 608S172.8 640 192 640l256 0c19.2 0 32-12.8 32-32S467.2 576 448 576z" />
-<path class="svgpath" data-index="path_3" d="M448 768 192 768c-19.2 0-32 12.8-32 32S172.8 832 192 832l256 0c19.2 0 32-12.8 32-32S467.2 768 448 768z" />
-<path class="svgpath" data-index="path_4" d="M780.8 704c12.8-19.2 19.2-38.4 19.2-64 0-70.4-57.6-128-128-128s-128 57.6-128 128c0 70.4 57.6 128 128 128 25.6 0 44.8-6.4 64-19.2l70.4 70.4c12.8 12.8 32 12.8 44.8 0 12.8-12.8 12.8-32 0-44.8L780.8 704zM608 640c0-38.4 25.6-64 64-64s64 25.6 64 64-25.6 64-64 64S608 678.4 608 640z" />
-</svg><p>
-	
-查看成绩
-</p>
-<p class="cell-desc">3月成绩已出</p>
-</li>
-		</ul>
-		<ul class="cell">
-			<li>
-			<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M640 512 448 704l-102.4 19.2c0-12.8-6.4-25.6-19.2-38.4s-25.6-12.8-38.4-19.2l19.2-102.4 198.4-198.4c12.8-12.8 12.8-32 0-44.8s-32-12.8-44.8 0L256 531.2C256 537.6 249.6 544 249.6 550.4l-44.8 224c0 12.8 0 19.2 6.4 32 6.4 6.4 12.8 6.4 25.6 6.4 0 0 6.4 0 6.4 0L467.2 768c6.4 0 12.8-6.4 19.2-6.4l204.8-204.8c12.8-12.8 12.8-32 0-44.8S652.8 499.2 640 512z" />
-<path class="svgpath" data-index="path_1" d="M576 262.4c-12.8-12.8-32-12.8-44.8 0s-12.8 32 0 44.8l179.2 179.2c6.4 6.4 12.8 6.4 25.6 6.4s19.2 0 25.6-6.4c12.8-12.8 12.8-32 0-44.8L576 262.4z" />
-<path class="svgpath" data-index="path_2" d="M857.6 294.4l-134.4-134.4c-25.6-25.6-64-25.6-89.6 0L588.8 198.4C576 217.6 576 236.8 588.8 256l172.8 172.8c12.8 12.8 38.4 12.8 51.2 0L857.6 384C883.2 358.4 883.2 320 857.6 294.4z" />
-<path class="svgpath" data-index="path_3" d="M371.2 646.4c6.4 6.4 12.8 6.4 25.6 6.4s19.2 0 25.6-6.4l179.2-179.2c12.8-12.8 12.8-32 0-44.8s-32-12.8-44.8 0L371.2 601.6C358.4 614.4 358.4 633.6 371.2 646.4z" />
+	</a>
+</div>
 
-</svg><p>我的文章</p></li>
-			<li>
-			<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M332.8 249.6c38.4 0 83.2 19.2 108.8 44.8L467.2 320 512 364.8 556.8 320l25.6-25.6c32-32 70.4-44.8 108.8-44.8 19.2 0 38.4 6.4 57.6 12.8 44.8 25.6 70.4 57.6 76.8 108.8 6.4 44.8-6.4 89.6-38.4 121.6L512 774.4 236.8 492.8C204.8 460.8 185.6 416 192 371.2c6.4-44.8 38.4-83.2 76.8-108.8C288 256 313.6 249.6 332.8 249.6L332.8 249.6M332.8 185.6C300.8 185.6 268.8 192 243.2 204.8 108.8 275.2 89.6 441.6 185.6 537.6l281.6 281.6C480 832 499.2 838.4 512 838.4s32-6.4 38.4-19.2l281.6-281.6c96-96 76.8-262.4-57.6-332.8-25.6-12.8-57.6-19.2-89.6-19.2-57.6 0-115.2 25.6-153.6 64L512 275.2 486.4 249.6C448 211.2 390.4 185.6 332.8 185.6L332.8 185.6z" />
-</svg><p>收藏</p></li>
-			<li>
-			<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M716.8 883.2c-6.4 0-19.2 0-25.6-6.4L512 755.2l-179.2 121.6c-19.2 12.8-38.4 12.8-57.6 0-19.2-12.8-25.6-32-19.2-51.2L320 614.4 147.2 480C134.4 467.2 128 448 134.4 428.8c6.4-19.2 25.6-32 44.8-32L390.4 384l76.8-204.8c12.8-38.4 76.8-38.4 89.6 0l0 0L633.6 384l217.6 6.4c19.2 0 38.4 12.8 44.8 32 6.4 19.2 0 38.4-19.2 51.2L704 614.4l57.6 211.2c6.4 19.2 0 38.4-19.2 51.2C736 876.8 729.6 883.2 716.8 883.2zM512 684.8c6.4 0 12.8 0 19.2 6.4l166.4 115.2-57.6-192C640 595.2 640 582.4 652.8 576l160-128L608 448C595.2 448 582.4 435.2 582.4 422.4L512 236.8l-70.4 192C441.6 435.2 428.8 448 416 448L211.2 454.4l160 128C384 582.4 384 595.2 384 608l-57.6 192 166.4-115.2C499.2 684.8 505.6 684.8 512 684.8z" />
-</svg><p>关注</p></li>
-		</ul>
-	</div>
-
-<!-- 编辑内容 -->
-<div class="page" id="page-edit">
+<div class="page" id="page-3">
 	<div class="top top-white"><a href="#">
-			<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" fill="#272636" d="M557.311759 513.248864l265.280473-263.904314c12.54369-12.480043 12.607338-32.704421 0.127295-45.248112-12.512727-12.576374-32.704421-12.607338-45.248112-0.127295L512.127295 467.904421 249.088241 204.063755c-12.447359-12.480043-32.704421-12.54369-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.280796l262.975407 263.775299-265.151458 263.744335c-12.54369 12.480043-12.607338 32.704421-0.127295 45.248112 6.239161 6.271845 14.463432 9.440452 22.687703 9.440452 8.160624 0 16.319527-3.103239 22.560409-9.311437l265.216826-263.807983 265.440452 266.240344c6.239161 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.311759 513.248864z" />
+		<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+			<path class="svgpath" data-index="path_0" d="M819.2 787.2 204.8 787.2c-12.8 0-19.2-6.4-25.6-12.8s-6.4-19.2 0-32l57.6-115.2L236.8 448c0-115.2 76.8-224 185.6-262.4C428.8 147.2 467.2 115.2 512 115.2S595.2 147.2 601.6 192c108.8 38.4 185.6 140.8 185.6 262.4l0 179.2 57.6 115.2c6.4 6.4 6.4 19.2 0 32S832 787.2 819.2 787.2zM256 729.6l512 0-38.4-76.8c0-6.4-6.4-6.4-6.4-12.8L723.2 448c0-96-64-185.6-160-204.8C550.4 236.8 537.6 224 544 211.2c0 0 0-6.4 0-6.4 0-12.8-12.8-25.6-32-25.6S480 185.6 480 204.8c0 0 0 0 0 6.4 0 12.8-6.4 32-25.6 32C364.8 268.8 294.4 352 294.4 448l0 185.6c0 6.4 0 6.4-6.4 12.8L256 729.6z" />
+			<path class="svgpath" data-index="path_1" d="M422.4 819.2c0 51.2 38.4 89.6 89.6 89.6 51.2 0 89.6-38.4 89.6-89.6L422.4 819.2z" />
+		</svg>
+	</a>
+	<h1>心得</h1>
+	<a href="#page-edit" class="btn-page-edit"><svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+		<path class="svgpath" data-index="path_0" d="M640 512 448 704l-102.4 19.2c0-12.8-6.4-25.6-19.2-38.4s-25.6-12.8-38.4-19.2l19.2-102.4 198.4-198.4c12.8-12.8 12.8-32 0-44.8s-32-12.8-44.8 0L256 531.2C256 537.6 249.6 544 249.6 550.4l-44.8 224c0 12.8 0 19.2 6.4 32 6.4 6.4 12.8 6.4 25.6 6.4 0 0 6.4 0 6.4 0L467.2 768c6.4 0 12.8-6.4 19.2-6.4l204.8-204.8c12.8-12.8 12.8-32 0-44.8S652.8 499.2 640 512z" />
+		<path class="svgpath" data-index="path_1" d="M576 262.4c-12.8-12.8-32-12.8-44.8 0s-12.8 32 0 44.8l179.2 179.2c6.4 6.4 12.8 6.4 25.6 6.4s19.2 0 25.6-6.4c12.8-12.8 12.8-32 0-44.8L576 262.4z" />
+		<path class="svgpath" data-index="path_2" d="M857.6 294.4l-134.4-134.4c-25.6-25.6-64-25.6-89.6 0L588.8 198.4C576 217.6 576 236.8 588.8 256l172.8 172.8c12.8 12.8 38.4 12.8 51.2 0L857.6 384C883.2 358.4 883.2 320 857.6 294.4z" />
+		<path class="svgpath" data-index="path_3" d="M371.2 646.4c6.4 6.4 12.8 6.4 25.6 6.4s19.2 0 25.6-6.4l179.2-179.2c12.8-12.8 12.8-32 0-44.8s-32-12.8-44.8 0L371.2 601.6C358.4 614.4 358.4 633.6 371.2 646.4z" />
 
-</svg>
+	</svg>
 
-		</a>
-		<a href="#" class="raised-button primary">信息</a>
-			
-</svg>
+</a>
+</div>
 
-		</a>
-	</div>
+<div class="card with-comment">
 	<div class="card-head">
 		<div class="card-profile">
 			<img src="holder.js/56x56" alt="">
 		</div>
 		<div class="card-head-text">
-			<div class="user-name">Lorem</div>
-			<div class="user-desc">June 1, 2015</div>
+			<div class="user-name">李粉珍</div>
+			<div class="user-desc">五年级学生家长</div>
 		</div>
 	</div>
-
-	<div class="edit-area">
-		<textarea name="" id="" placeholder="有什么心得要分享吗？"></textarea>
-		<div class="tools">
-			<a href="">
-				<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M832 864 192 864c-51.2 0-96-44.8-96-96L96 256c0-51.2 44.8-96 96-96l640 0c51.2 0 96 44.8 96 96l0 512C928 819.2 883.2 864 832 864zM192 224C172.8 224 160 236.8 160 256l0 512c0 19.2 12.8 32 32 32l640 0c19.2 0 32-12.8 32-32L864 256c0-19.2-12.8-32-32-32L192 224z" />
-<path class="svgpath" data-index="path_1" d="M672 409.6m-64 0a1 1 0 1 0 128 0 1 1 0 1 0 -128 0Z" />
-<path class="svgpath" data-index="path_2" d="M768 678.4c-57.6-44.8-83.2-32-121.6-12.8-25.6 12.8-64 25.6-115.2 19.2-64-12.8-89.6-57.6-108.8-96-12.8-25.6-25.6-51.2-51.2-64-64-32-121.6 6.4-121.6 6.4C230.4 544 204.8 537.6 198.4 524.8c-6.4-12.8 0-38.4 12.8-44.8 6.4 0 89.6-57.6 185.6-12.8 44.8 25.6 64 57.6 83.2 89.6 19.2 32 32 57.6 70.4 64 25.6 6.4 44.8 0 70.4-12.8 44.8-19.2 96-44.8 185.6 25.6 19.2 12.8 19.2 38.4 12.8 44.8C806.4 684.8 793.6 697.6 768 678.4z" />
-
-</svg>
-			</a>
-			<a href="">
-				<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M448 876.8 806.4 512c128-128 57.6-262.4 0-313.6-57.6-57.6-192-128-320 0L172.8 512c-89.6 89.6-38.4 185.6 0 224 38.4 38.4 134.4 89.6 224 0l313.6-313.6c25.6-25.6 32-51.2 32-64 0-38.4-25.6-64-32-70.4-25.6-25.6-83.2-51.2-134.4 0L262.4 601.6c-12.8 12.8-12.8 32 0 44.8 12.8 12.8 32 12.8 44.8 0l313.6-313.6c19.2-19.2 32-12.8 44.8 0 0 0 25.6 19.2 0 44.8l-313.6 313.6c-64 64-121.6 12.8-134.4 0-12.8-12.8-64-70.4 0-134.4l313.6-313.6c108.8-108.8 217.6-12.8 224 0 12.8 12.8 108.8 115.2 0 224L403.2 832l0 0c-12.8 12.8-12.8 32 0 44.8C416 889.6 435.2 889.6 448 876.8L448 876.8 448 876.8C448 876.8 448 876.8 448 876.8 448 876.8 448 876.8 448 876.8z" />
-
-</svg>
-
-			</a>
+	<div class="card-content">
+		<p>如何和孩子相处是个大学问，有人认为要严厉，有人认为要像朋友一样。大家怎么看？</p>
+		<div class="card-content-image">
+			
 		</div>
-	</div>	
+	</div>
+	<div class="action-area">
+		<a href="" class="heart">
+			<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+				<path class="svgpath" data-index="path_0" d="M780.8 204.8c-83.2-44.8-179.2-19.2-243.2 44.8L512 275.2 486.4 249.6c-64-64-166.4-83.2-243.2-44.8C108.8 275.2 89.6 441.6 185.6 537.6l32 32 153.6 153.6 102.4 102.4c25.6 25.6 57.6 25.6 83.2 0l102.4-102.4 153.6-153.6 32-32C934.4 441.6 915.2 275.2 780.8 204.8z" />
+
+			</svg>
+
+		</a>
+		<a href=""></a>
+		<a href="">
+			<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+				<path class="svgpath" data-index="path_0" d="M640 416 384 416C364.8 416 352 403.2 352 384S364.8 352 384 352l256 0c19.2 0 32 12.8 32 32S659.2 416 640 416z" />
+				<path class="svgpath" data-index="path_1" d="M576 544 384 544C364.8 544 352 531.2 352 512S364.8 480 384 480l192 0c19.2 0 32 12.8 32 32S595.2 544 576 544z" />
+				<path class="svgpath" data-index="path_2" d="M377.6 896c-6.4 0-6.4 0-12.8 0-12.8-6.4-19.2-19.2-19.2-32l0-128C211.2 684.8 128 569.6 128 448c0-179.2 172.8-320 384-320s384 140.8 384 320c0 172.8-166.4 313.6-371.2 320l-128 121.6C390.4 896 384 896 377.6 896zM512 192C332.8 192 192 307.2 192 448c0 102.4 76.8 192 192 236.8 12.8 6.4 19.2 19.2 19.2 32l0 76.8 83.2-76.8C492.8 704 505.6 704 512 704c179.2 0 320-115.2 320-256S691.2 192 512 192z" />
+			</svg>
+			<span>38</span>
+		</a>
+	</div>
+	<div class="card-comments">
+		<div class="user-name">法式小面包976</div>
+		<div class="comment">教育首先是一种生活方式。什么样的生活方式决定什么样的孩子。</div>
+	</div>
 </div>
 
 
-	<div class="main-nav">
-		<input type="radio" name="nav-toggle" id="nav-toggle-discover" checked/>
-		<label class="nav-toggle" for="nav-toggle-discover" onclick="page(1)">
-		<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M889.6 428.8c-6.4-19.2-25.6-32-44.8-32L633.6 384 556.8 179.2l0 0c-12.8-38.4-76.8-38.4-89.6 0L390.4 384 179.2 390.4c-19.2 0-38.4 12.8-44.8 32C128 448 134.4 467.2 147.2 480L320 614.4l-57.6 211.2c-6.4 19.2 0 38.4 19.2 51.2 19.2 12.8 38.4 12.8 57.6 0L512 755.2l179.2 121.6c6.4 6.4 19.2 6.4 25.6 6.4 12.8 0 19.2 0 25.6-6.4 19.2-12.8 25.6-32 19.2-51.2L704 614.4l172.8-134.4C889.6 467.2 896 448 889.6 428.8z" />
-</svg>
-		<p>发现</p>
-		</label>
-
-		<input type="radio" name="nav-toggle" id="nav-toggle-news" />
-		<label class="nav-toggle" for="nav-toggle-news" onclick="page(2)">
-		<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M640 416 384 416C364.8 416 352 403.2 352 384S364.8 352 384 352l256 0c19.2 0 32 12.8 32 32S659.2 416 640 416z" />
-<path class="svgpath" data-index="path_1" d="M576 544 384 544C364.8 544 352 531.2 352 512S364.8 480 384 480l192 0c19.2 0 32 12.8 32 32S595.2 544 576 544z" />
-<path class="svgpath" data-index="path_2" d="M377.6 896c-6.4 0-6.4 0-12.8 0-12.8-6.4-19.2-19.2-19.2-32l0-128C211.2 684.8 128 569.6 128 448c0-179.2 172.8-320 384-320s384 140.8 384 320c0 172.8-166.4 313.6-371.2 320l-128 121.6C390.4 896 384 896 377.6 896zM512 192C332.8 192 192 307.2 192 448c0 102.4 76.8 192 192 236.8 12.8 6.4 19.2 19.2 19.2 32l0 76.8 83.2-76.8C492.8 704 505.6 704 512 704c179.2 0 320-115.2 320-256S691.2 192 512 192z" />
-
-</svg>
-
-<p>新闻</p></label>
-		<input type="radio" name="nav-toggle" id="nav-toggle-article" />
-		<label class="nav-toggle" for="nav-toggle-article" onclick="page(3)">
-		<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M640 512 448 704l-102.4 19.2c0-12.8-6.4-25.6-19.2-38.4s-25.6-12.8-38.4-19.2l19.2-102.4 198.4-198.4c12.8-12.8 12.8-32 0-44.8s-32-12.8-44.8 0L256 531.2C256 537.6 249.6 544 249.6 550.4l-44.8 224c0 12.8 0 19.2 6.4 32 6.4 6.4 12.8 6.4 25.6 6.4 0 0 6.4 0 6.4 0L467.2 768c6.4 0 12.8-6.4 19.2-6.4l204.8-204.8c12.8-12.8 12.8-32 0-44.8S652.8 499.2 640 512z" />
-<path class="svgpath" data-index="path_1" d="M576 262.4c-12.8-12.8-32-12.8-44.8 0s-12.8 32 0 44.8l179.2 179.2c6.4 6.4 12.8 6.4 25.6 6.4s19.2 0 25.6-6.4c12.8-12.8 12.8-32 0-44.8L576 262.4z" />
-<path class="svgpath" data-index="path_2" d="M857.6 294.4l-134.4-134.4c-25.6-25.6-64-25.6-89.6 0L588.8 198.4C576 217.6 576 236.8 588.8 256l172.8 172.8c12.8 12.8 38.4 12.8 51.2 0L857.6 384C883.2 358.4 883.2 320 857.6 294.4z" />
-<path class="svgpath" data-index="path_3" d="M371.2 646.4c6.4 6.4 12.8 6.4 25.6 6.4s19.2 0 25.6-6.4l179.2-179.2c12.8-12.8 12.8-32 0-44.8s-32-12.8-44.8 0L371.2 601.6C358.4 614.4 358.4 633.6 371.2 646.4z" />
-
-</svg><p>心得</p></label>
-		<input type="radio" name="nav-toggle" id="nav-toggle-mine" />
-		<label class="nav-toggle" for="nav-toggle-mine" onclick="page(4)">
-		<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-  <path class="svgpath" data-index="path_0" d="M512 512m-396.8 0a6.2 6.2 0 1 0 793.6 0 6.2 6.2 0 1 0 -793.6 0Z" />
-<path class="svgpath" data-index="path_1" fill="#fff" d="M665.6 416c0-134.4-96-153.6-153.6-153.6S358.4 281.6 358.4 416c0 121.6 83.2 204.8 83.2 204.8L448 627.2l0 12.8c0 19.2-12.8 57.6-64 64-44.8 6.4-76.8 25.6-102.4 51.2 57.6 57.6 140.8 96 230.4 96 89.6 0 172.8-38.4 230.4-96C723.2 723.2 684.8 704 640 704c-51.2-6.4-64-44.8-64-64l0-6.4 6.4-6.4C582.4 620.8 665.6 537.6 665.6 416z" />
-
-</svg>
-		<p>我</p></label>
+<div class="card with-comment">
+	<div class="card-head">
+		<div class="card-profile">
+			<img src="holder.js/56x56" alt="">
+		</div>
+		<div class="card-head-text">
+			<div class="user-name">李小鹏</div>
+			<div class="user-desc">四年级学生家长</div>
+		</div>
 	</div>
+	<div class="card-content">
+		<p>新加坡最适合带孩子去玩了，干净又安全。动物园、游乐场，大人小孩都喜欢去，随处可见的花花草草更是看了心旷神怡~#伴我童行，从心发现#</p>
+		<div class="card-content-image">
+			<img src="643f173bgw1ezrzafrg2cj20rs0nsk23.jpg" alt="">
+		</div>
+	</div>
+	<div class="action-area">
+		<a href="">
+			<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+				<path class="svgpath" data-index="path_0" d="M780.8 204.8c-83.2-44.8-179.2-19.2-243.2 44.8L512 275.2 486.4 249.6c-64-64-166.4-83.2-243.2-44.8C108.8 275.2 89.6 441.6 185.6 537.6l32 32 153.6 153.6 102.4 102.4c25.6 25.6 57.6 25.6 83.2 0l102.4-102.4 153.6-153.6 32-32C934.4 441.6 915.2 275.2 780.8 204.8z" />
+
+			</svg>
+		</a>
+		<a href=""></a>
+		<a href="">
+			<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+				<path class="svgpath" data-index="path_0" d="M640 416 384 416C364.8 416 352 403.2 352 384S364.8 352 384 352l256 0c19.2 0 32 12.8 32 32S659.2 416 640 416z" />
+				<path class="svgpath" data-index="path_1" d="M576 544 384 544C364.8 544 352 531.2 352 512S364.8 480 384 480l192 0c19.2 0 32 12.8 32 32S595.2 544 576 544z" />
+				<path class="svgpath" data-index="path_2" d="M377.6 896c-6.4 0-6.4 0-12.8 0-12.8-6.4-19.2-19.2-19.2-32l0-128C211.2 684.8 128 569.6 128 448c0-179.2 172.8-320 384-320s384 140.8 384 320c0 172.8-166.4 313.6-371.2 320l-128 121.6C390.4 896 384 896 377.6 896zM512 192C332.8 192 192 307.2 192 448c0 102.4 76.8 192 192 236.8 12.8 6.4 19.2 19.2 19.2 32l0 76.8 83.2-76.8C492.8 704 505.6 704 512 704c179.2 0 320-115.2 320-256S691.2 192 512 192z" />
+			</svg>
+			<span>38</span>
+		</a>
+	</div>
+	<div class="card-comments">
+		<div class="user-name">兔小宝__记事</div>
+		<div class="comment">新加坡的环境真的是太好了呀</div>
+	</div>
+</div>
+</div>
+</div>
+
+<div class="page" id="page-4">
+	<div class="top top-white"><a href="#">
+		<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+			<path class="svgpath" data-index="path_0" d="M819.2 787.2 204.8 787.2c-12.8 0-19.2-6.4-25.6-12.8s-6.4-19.2 0-32l57.6-115.2L236.8 448c0-115.2 76.8-224 185.6-262.4C428.8 147.2 467.2 115.2 512 115.2S595.2 147.2 601.6 192c108.8 38.4 185.6 140.8 185.6 262.4l0 179.2 57.6 115.2c6.4 6.4 6.4 19.2 0 32S832 787.2 819.2 787.2zM256 729.6l512 0-38.4-76.8c0-6.4-6.4-6.4-6.4-12.8L723.2 448c0-96-64-185.6-160-204.8C550.4 236.8 537.6 224 544 211.2c0 0 0-6.4 0-6.4 0-12.8-12.8-25.6-32-25.6S480 185.6 480 204.8c0 0 0 0 0 6.4 0 12.8-6.4 32-25.6 32C364.8 268.8 294.4 352 294.4 448l0 185.6c0 6.4 0 6.4-6.4 12.8L256 729.6z" />
+			<path class="svgpath" data-index="path_1" d="M422.4 819.2c0 51.2 38.4 89.6 89.6 89.6 51.2 0 89.6-38.4 89.6-89.6L422.4 819.2z" />
+		</svg>
+	</a>
+	<h1>我</h1>
+	<a href="#">
+		<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+			<path class="svgpath" data-index="path_0" d="M742.4 844.8 742.4 844.8c-32 0-64-12.8-89.6-38.4l-160-160c-89.6 25.6-179.2 0-249.6-64C166.4 505.6 147.2 396.8 192 294.4c6.4-12.8 12.8-19.2 25.6-19.2 12.8 0 19.2 0 25.6 6.4l115.2 115.2 70.4-70.4L313.6 217.6C307.2 211.2 300.8 198.4 300.8 192c0-12.8 6.4-19.2 19.2-25.6 96-44.8 211.2-25.6 288 51.2 64 64 89.6 160 64 249.6L832 627.2c25.6 25.6 38.4 57.6 38.4 89.6 0 32-12.8 64-38.4 89.6C806.4 832 774.4 844.8 742.4 844.8zM499.2 582.4c6.4 0 19.2 6.4 25.6 6.4l172.8 172.8c12.8 12.8 25.6 19.2 44.8 19.2l0 0c19.2 0 32-6.4 44.8-19.2 12.8-12.8 19.2-25.6 19.2-44.8 0-19.2-6.4-32-19.2-44.8L614.4 499.2C601.6 492.8 601.6 473.6 608 467.2 633.6 396.8 614.4 320 563.2 262.4c-44.8-44.8-108.8-64-166.4-51.2l83.2 83.2c19.2 19.2 19.2 51.2 0 70.4L390.4 454.4C371.2 473.6 339.2 473.6 320 454.4L236.8 371.2C224 428.8 243.2 492.8 288 537.6c51.2 51.2 128 70.4 198.4 44.8C492.8 582.4 499.2 582.4 499.2 582.4z" />
+
+		</svg>
+
+	</a>
+</div>
+<div class="card-flat card-profile">
+	<div class="profile">
+		<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+			<path class="svgpath" data-index="path_0" d="M877.443978 872.455569c0 0-162.897363-82.738787-237.723501-88.071225l0-23.737947c119.721821-50.916177 195.064001-174.93835 195.064001-319.946246 0-190.075592-145.867966-344.544263-325.106669-344.544263s-325.106669 154.640685-325.106669 344.544263c0 146.728036 77.40635 271.954309 199.536368 321.666387l0 22.017806-1.548127 0c-69.493701 3.440282-235.315303 87.727196-235.315303 87.727196S125.570301 890.345036 127.978498 904.106165c2.408198 13.761129 14.793214 23.909961 29.070385 23.909961L423.154712 928.016126l177.346548 0 265.933815 0c14.277171 0 26.318159-9.804804 29.070385-23.393919C898.257685 891.033093 877.443978 872.455569 877.443978 872.455569z" />
+		</svg>
+	</div>
+	<a href="">微信登陆</a>
+</div>
+<ul class="cell">
+	<li>
+		<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+			<path class="svgpath" data-index="path_0" d="M192 256l640 0c19.2 0 32-12.8 32-32S851.2 192 832 192L192 192C172.8 192 160 204.8 160 224S172.8 256 192 256z" />
+			<path class="svgpath" data-index="path_1" d="M832 384 192 384C172.8 384 160 396.8 160 416S172.8 448 192 448l640 0c19.2 0 32-12.8 32-32S851.2 384 832 384z" />
+			<path class="svgpath" data-index="path_2" d="M448 576 192 576C172.8 576 160 588.8 160 608S172.8 640 192 640l256 0c19.2 0 32-12.8 32-32S467.2 576 448 576z" />
+			<path class="svgpath" data-index="path_3" d="M448 768 192 768c-19.2 0-32 12.8-32 32S172.8 832 192 832l256 0c19.2 0 32-12.8 32-32S467.2 768 448 768z" />
+			<path class="svgpath" data-index="path_4" d="M780.8 704c12.8-19.2 19.2-38.4 19.2-64 0-70.4-57.6-128-128-128s-128 57.6-128 128c0 70.4 57.6 128 128 128 25.6 0 44.8-6.4 64-19.2l70.4 70.4c12.8 12.8 32 12.8 44.8 0 12.8-12.8 12.8-32 0-44.8L780.8 704zM608 640c0-38.4 25.6-64 64-64s64 25.6 64 64-25.6 64-64 64S608 678.4 608 640z" />
+		</svg><p>
+
+		查看成绩
+	</p>
+	<p class="cell-desc">3月成绩已出</p>
+</li>
+</ul>
+<ul class="cell">
+	<li>
+		<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+			<path class="svgpath" data-index="path_0" d="M640 512 448 704l-102.4 19.2c0-12.8-6.4-25.6-19.2-38.4s-25.6-12.8-38.4-19.2l19.2-102.4 198.4-198.4c12.8-12.8 12.8-32 0-44.8s-32-12.8-44.8 0L256 531.2C256 537.6 249.6 544 249.6 550.4l-44.8 224c0 12.8 0 19.2 6.4 32 6.4 6.4 12.8 6.4 25.6 6.4 0 0 6.4 0 6.4 0L467.2 768c6.4 0 12.8-6.4 19.2-6.4l204.8-204.8c12.8-12.8 12.8-32 0-44.8S652.8 499.2 640 512z" />
+			<path class="svgpath" data-index="path_1" d="M576 262.4c-12.8-12.8-32-12.8-44.8 0s-12.8 32 0 44.8l179.2 179.2c6.4 6.4 12.8 6.4 25.6 6.4s19.2 0 25.6-6.4c12.8-12.8 12.8-32 0-44.8L576 262.4z" />
+			<path class="svgpath" data-index="path_2" d="M857.6 294.4l-134.4-134.4c-25.6-25.6-64-25.6-89.6 0L588.8 198.4C576 217.6 576 236.8 588.8 256l172.8 172.8c12.8 12.8 38.4 12.8 51.2 0L857.6 384C883.2 358.4 883.2 320 857.6 294.4z" />
+			<path class="svgpath" data-index="path_3" d="M371.2 646.4c6.4 6.4 12.8 6.4 25.6 6.4s19.2 0 25.6-6.4l179.2-179.2c12.8-12.8 12.8-32 0-44.8s-32-12.8-44.8 0L371.2 601.6C358.4 614.4 358.4 633.6 371.2 646.4z" />
+
+		</svg><p>我的文章</p></li>
+		<li>
+			<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+				<path class="svgpath" data-index="path_0" d="M332.8 249.6c38.4 0 83.2 19.2 108.8 44.8L467.2 320 512 364.8 556.8 320l25.6-25.6c32-32 70.4-44.8 108.8-44.8 19.2 0 38.4 6.4 57.6 12.8 44.8 25.6 70.4 57.6 76.8 108.8 6.4 44.8-6.4 89.6-38.4 121.6L512 774.4 236.8 492.8C204.8 460.8 185.6 416 192 371.2c6.4-44.8 38.4-83.2 76.8-108.8C288 256 313.6 249.6 332.8 249.6L332.8 249.6M332.8 185.6C300.8 185.6 268.8 192 243.2 204.8 108.8 275.2 89.6 441.6 185.6 537.6l281.6 281.6C480 832 499.2 838.4 512 838.4s32-6.4 38.4-19.2l281.6-281.6c96-96 76.8-262.4-57.6-332.8-25.6-12.8-57.6-19.2-89.6-19.2-57.6 0-115.2 25.6-153.6 64L512 275.2 486.4 249.6C448 211.2 390.4 185.6 332.8 185.6L332.8 185.6z" />
+			</svg><p>收藏</p></li>
+			<li>
+				<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+					<path class="svgpath" data-index="path_0" d="M716.8 883.2c-6.4 0-19.2 0-25.6-6.4L512 755.2l-179.2 121.6c-19.2 12.8-38.4 12.8-57.6 0-19.2-12.8-25.6-32-19.2-51.2L320 614.4 147.2 480C134.4 467.2 128 448 134.4 428.8c6.4-19.2 25.6-32 44.8-32L390.4 384l76.8-204.8c12.8-38.4 76.8-38.4 89.6 0l0 0L633.6 384l217.6 6.4c19.2 0 38.4 12.8 44.8 32 6.4 19.2 0 38.4-19.2 51.2L704 614.4l57.6 211.2c6.4 19.2 0 38.4-19.2 51.2C736 876.8 729.6 883.2 716.8 883.2zM512 684.8c6.4 0 12.8 0 19.2 6.4l166.4 115.2-57.6-192C640 595.2 640 582.4 652.8 576l160-128L608 448C595.2 448 582.4 435.2 582.4 422.4L512 236.8l-70.4 192C441.6 435.2 428.8 448 416 448L211.2 454.4l160 128C384 582.4 384 595.2 384 608l-57.6 192 166.4-115.2C499.2 684.8 505.6 684.8 512 684.8z" />
+				</svg><p>关注</p></li>
+			</ul>
+		</div>
+
+		<!-- 编辑内容 -->
+		<div class="page" id="page-edit">
+			<div class="top top-white">
+				<a href="#page-3" class="btn-page-edit-close">
+				<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+					<path class="svgpath" data-index="path_0" fill="#272636" d="M557.311759 513.248864l265.280473-263.904314c12.54369-12.480043 12.607338-32.704421 0.127295-45.248112-12.512727-12.576374-32.704421-12.607338-45.248112-0.127295L512.127295 467.904421 249.088241 204.063755c-12.447359-12.480043-32.704421-12.54369-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.280796l262.975407 263.775299-265.151458 263.744335c-12.54369 12.480043-12.607338 32.704421-0.127295 45.248112 6.239161 6.271845 14.463432 9.440452 22.687703 9.440452 8.160624 0 16.319527-3.103239 22.560409-9.311437l265.216826-263.807983 265.440452 266.240344c6.239161 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.311759 513.248864z" />
+
+				</svg>
+
+			</a>
+			<a href="#page-3" class="raised-button primary">分享</a>
+			
+		</svg>
+
+	</a>
+</div>
+<div class="card-head">
+	<div class="card-profile">
+		<img src="holder.js/56x56" alt="">
+	</div>
+	<div class="card-head-text">
+		<div class="user-name">瑞卡斯Rica</div>
+		<div class="user-desc">所有人可见</div>
+	</div>
+</div>
+
+<div class="edit-area">
+	<textarea name="" id="" placeholder="有什么心得要分享吗？"></textarea>
+	<div class="tools">
+		<a href="">
+			<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+				<path class="svgpath" data-index="path_0" d="M832 864 192 864c-51.2 0-96-44.8-96-96L96 256c0-51.2 44.8-96 96-96l640 0c51.2 0 96 44.8 96 96l0 512C928 819.2 883.2 864 832 864zM192 224C172.8 224 160 236.8 160 256l0 512c0 19.2 12.8 32 32 32l640 0c19.2 0 32-12.8 32-32L864 256c0-19.2-12.8-32-32-32L192 224z" />
+				<path class="svgpath" data-index="path_1" d="M672 409.6m-64 0a1 1 0 1 0 128 0 1 1 0 1 0 -128 0Z" />
+				<path class="svgpath" data-index="path_2" d="M768 678.4c-57.6-44.8-83.2-32-121.6-12.8-25.6 12.8-64 25.6-115.2 19.2-64-12.8-89.6-57.6-108.8-96-12.8-25.6-25.6-51.2-51.2-64-64-32-121.6 6.4-121.6 6.4C230.4 544 204.8 537.6 198.4 524.8c-6.4-12.8 0-38.4 12.8-44.8 6.4 0 89.6-57.6 185.6-12.8 44.8 25.6 64 57.6 83.2 89.6 19.2 32 32 57.6 70.4 64 25.6 6.4 44.8 0 70.4-12.8 44.8-19.2 96-44.8 185.6 25.6 19.2 12.8 19.2 38.4 12.8 44.8C806.4 684.8 793.6 697.6 768 678.4z" />
+
+			</svg>
+		</a>
+		<a href="">
+			<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+				<path class="svgpath" data-index="path_0" d="M448 876.8 806.4 512c128-128 57.6-262.4 0-313.6-57.6-57.6-192-128-320 0L172.8 512c-89.6 89.6-38.4 185.6 0 224 38.4 38.4 134.4 89.6 224 0l313.6-313.6c25.6-25.6 32-51.2 32-64 0-38.4-25.6-64-32-70.4-25.6-25.6-83.2-51.2-134.4 0L262.4 601.6c-12.8 12.8-12.8 32 0 44.8 12.8 12.8 32 12.8 44.8 0l313.6-313.6c19.2-19.2 32-12.8 44.8 0 0 0 25.6 19.2 0 44.8l-313.6 313.6c-64 64-121.6 12.8-134.4 0-12.8-12.8-64-70.4 0-134.4l313.6-313.6c108.8-108.8 217.6-12.8 224 0 12.8 12.8 108.8 115.2 0 224L403.2 832l0 0c-12.8 12.8-12.8 32 0 44.8C416 889.6 435.2 889.6 448 876.8L448 876.8 448 876.8C448 876.8 448 876.8 448 876.8 448 876.8 448 876.8 448 876.8z" />
+
+			</svg>
+
+		</a>
+	</div>
+</div>	
+</div>
+
+
+<div class="main-nav">
+	<input type="radio" name="nav-toggle" id="nav-toggle-discover"/>
+	<!-- <label class="nav-toggle" for="nav-toggle-discover" onclick="page(1)"> -->
+	<a href="#page-1" class="nav-toggle curr" onclick="page(1)">
+		<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+			<path class="svgpath" data-index="path_0" d="M889.6 428.8c-6.4-19.2-25.6-32-44.8-32L633.6 384 556.8 179.2l0 0c-12.8-38.4-76.8-38.4-89.6 0L390.4 384 179.2 390.4c-19.2 0-38.4 12.8-44.8 32C128 448 134.4 467.2 147.2 480L320 614.4l-57.6 211.2c-6.4 19.2 0 38.4 19.2 51.2 19.2 12.8 38.4 12.8 57.6 0L512 755.2l179.2 121.6c6.4 6.4 19.2 6.4 25.6 6.4 12.8 0 19.2 0 25.6-6.4 19.2-12.8 25.6-32 19.2-51.2L704 614.4l172.8-134.4C889.6 467.2 896 448 889.6 428.8z" />
+		</svg>
+		<p>新闻</p>
+		<!-- </label> -->
+
+	</a>
+
+	<input type="radio" name="nav-toggle" id="nav-toggle-news" />
+	<!-- <label class="nav-toggle" for="nav-toggle-news" onclick="page(2)"> -->
+	<a href="#page-2" class="nav-toggle" onclick="page(2)">
+		<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+			<path class="svgpath" data-index="path_0" d="M640 416 384 416C364.8 416 352 403.2 352 384S364.8 352 384 352l256 0c19.2 0 32 12.8 32 32S659.2 416 640 416z" />
+			<path class="svgpath" data-index="path_1" d="M576 544 384 544C364.8 544 352 531.2 352 512S364.8 480 384 480l192 0c19.2 0 32 12.8 32 32S595.2 544 576 544z" />
+			<path class="svgpath" data-index="path_2" d="M377.6 896c-6.4 0-6.4 0-12.8 0-12.8-6.4-19.2-19.2-19.2-32l0-128C211.2 684.8 128 569.6 128 448c0-179.2 172.8-320 384-320s384 140.8 384 320c0 172.8-166.4 313.6-371.2 320l-128 121.6C390.4 896 384 896 377.6 896zM512 192C332.8 192 192 307.2 192 448c0 102.4 76.8 192 192 236.8 12.8 6.4 19.2 19.2 19.2 32l0 76.8 83.2-76.8C492.8 704 505.6 704 512 704c179.2 0 320-115.2 320-256S691.2 192 512 192z" />
+
+		</svg>
+
+		<p>文章</p>
+		<!-- </label> -->
+	</a>
+	<input type="radio" name="nav-toggle" id="nav-toggle-article" />
+	<!-- <label class="nav-toggle" for="nav-toggle-article" onclick="page(3)"> -->
+	<a href="#page-3" class="nav-toggle" onclick="page(3)">
+		<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+			<path class="svgpath" data-index="path_0" d="M640 512 448 704l-102.4 19.2c0-12.8-6.4-25.6-19.2-38.4s-25.6-12.8-38.4-19.2l19.2-102.4 198.4-198.4c12.8-12.8 12.8-32 0-44.8s-32-12.8-44.8 0L256 531.2C256 537.6 249.6 544 249.6 550.4l-44.8 224c0 12.8 0 19.2 6.4 32 6.4 6.4 12.8 6.4 25.6 6.4 0 0 6.4 0 6.4 0L467.2 768c6.4 0 12.8-6.4 19.2-6.4l204.8-204.8c12.8-12.8 12.8-32 0-44.8S652.8 499.2 640 512z" />
+			<path class="svgpath" data-index="path_1" d="M576 262.4c-12.8-12.8-32-12.8-44.8 0s-12.8 32 0 44.8l179.2 179.2c6.4 6.4 12.8 6.4 25.6 6.4s19.2 0 25.6-6.4c12.8-12.8 12.8-32 0-44.8L576 262.4z" />
+			<path class="svgpath" data-index="path_2" d="M857.6 294.4l-134.4-134.4c-25.6-25.6-64-25.6-89.6 0L588.8 198.4C576 217.6 576 236.8 588.8 256l172.8 172.8c12.8 12.8 38.4 12.8 51.2 0L857.6 384C883.2 358.4 883.2 320 857.6 294.4z" />
+			<path class="svgpath" data-index="path_3" d="M371.2 646.4c6.4 6.4 12.8 6.4 25.6 6.4s19.2 0 25.6-6.4l179.2-179.2c12.8-12.8 12.8-32 0-44.8s-32-12.8-44.8 0L371.2 601.6C358.4 614.4 358.4 633.6 371.2 646.4z" />
+
+		</svg><p>心得</p>
+		<!-- </label> -->
+	</a>
+	<input type="radio" name="nav-toggle" id="nav-toggle-mine" />
+	<!-- <label class="nav-toggle" for="nav-toggle-mine" onclick="page(4)"> -->
+	<a href="#page-4" class="nav-toggle" onclick="page(4)">
+		<svg version="1.1" id="图形" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+			<path class="svgpath" data-index="path_0" d="M512 512m-396.8 0a6.2 6.2 0 1 0 793.6 0 6.2 6.2 0 1 0 -793.6 0Z" />
+			<path class="svgpath" data-index="path_1" fill="#fff" d="M665.6 416c0-134.4-96-153.6-153.6-153.6S358.4 281.6 358.4 416c0 121.6 83.2 204.8 83.2 204.8L448 627.2l0 12.8c0 19.2-12.8 57.6-64 64-44.8 6.4-76.8 25.6-102.4 51.2 57.6 57.6 140.8 96 230.4 96 89.6 0 172.8-38.4 230.4-96C723.2 723.2 684.8 704 640 704c-51.2-6.4-64-44.8-64-64l0-6.4 6.4-6.4C582.4 620.8 665.6 537.6 665.6 416z" />
+
+		</svg>
+		<p>我</p>
+		<!-- </label> -->
+	</a>
+</div>
 </body>
 </html>
