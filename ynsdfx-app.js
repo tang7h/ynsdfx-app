@@ -1,6 +1,6 @@
 
 $(document).ready(function initial() {
-	$('.page').hide();
+	// $('.page').hide();
 	$('#page-1').show();
 })
 function page(index) {
