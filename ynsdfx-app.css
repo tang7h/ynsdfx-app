@@ -8,6 +8,8 @@
 }
 html {
 	height: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 body {
 	height: 100%;
@@ -19,13 +21,14 @@ body {
 	font-family: PingHei, 'PingFang SC', 'Helvetica Neue', Helvetica, STHeitiSC-Light, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
+	display: flex;
 }
 ul {
 	list-style: none;
 }
 a {
 	text-decoration: none;
-	color: #1788e8;
+	color: #2979FF;
 }
 svg {
 	fill: currentcolor;
@@ -35,37 +38,81 @@ svg {
 }
 .page {
 	width: 100%;
-	border-top: 2px solid #1788E8;/*flyme blue*/
+	height: 100%;
+	overflow-y: auto; 
+	border-top: 2px solid #2979FF;/*flyme blue*/
 	border: none;
-	padding-top: 44px;
+	padding-top: 48px;
 	padding-bottom: 73px;
+	flex: 1 0 100%;
+	position: relative;
 }
-.page:nth-of-type(2) {
-	border-color: orange;
+#page-edit {
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	transform: translateY(-150px);
+	/*opacity: 0;*/
+	height: 0px;
+	overflow: hidden;
+	transition: all .5s;
+	/*animation: page .5s;*/
+	z-index: 8;
 }
-.page:nth-of-type(3) {
-	border-color: tomato;
+#page-edit.show {
+	display: block;
+	height: 100%;
+	transform: translateY(0);
+	opacity: 1;
 }
-.page:nth-of-type(4) {
-	border-color: #333;
+.animate-page {
+	animation: page .3s;
+}
+@keyframes page {
+	0%{
+		transform: translateY(-50px);
+		opacity: 0;
+		height: 50px;
+	}
+	20%{
+		opacity: 1;
+	}
+	100%{
+		transform: translateY(0);
+
+	}
+}
+.animation-page-out {
+	animation: page .3s reverse;
+
 }
 
 .card {
 	border-radius: 2px;
-	min-height: 200px;
+	min-height: 160px;
 	margin: 10px 8px;
 	position: relative;
 	background: #fff;
 	border: .5px solid rgba(0,0,0,.12);
 	box-shadow: 0 1px 8px rgba(0,0,0,.05);
+	overflow: hidden;
 }
 .card .content {
-	padding: 24px 16px 0px 16px;
+	padding: 0 16px 8px 16px;
 
 }
 .card .action-area {
 	display: flex;
 	justify-content: flex-end;
+}
+.card.with-comment .action-area {
+	justify-content: space-between;
+	padding: 8px 16px;
+} 
+.card .action-area .heart {
+	color: #FF8A80;
 }
 
 .card-flat {
@@ -88,6 +135,7 @@ svg {
 	top: 0;
 	left: 0;
 }
+
 .card h2 {
 	font-size: 24px;
 }
@@ -96,8 +144,129 @@ svg {
 	color: rgba(0,0,0,.38);
 	margin: 8px 0;
 }
+.card.notification .article-label {
+	font-size: 1em;
+	color: rgba(0,0,0,.54);
+}
 .card p {
 	margin: 16px 0;
+}
+.card.with-comment a {
+	color: rgba(0,0,0,.54);
+	vertical-align: top;
+}
+.card-head {/*大头像卡片标题*/
+	flex: 1 0 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 16px;
+	align-items: center;
+	background-image: url(http://www.bybutter.com/images/sec2-repeat.png); 
+
+}
+.card.notification .card-head {
+	padding: 8px 16px;
+	background-color: rgba(0,0,0,.05);
+}
+.card.notification:nth-child(2) .card-head {/*第一个元素是顶栏*/
+	background-color: #E3F2FD;
+	color: #2979FF;
+}.card.notification:nth-child(3) .card-head {
+	background-color: #FFF8E1;
+	color: #FFC400;
+}.card.notification:nth-child(4) .card-head {
+	background-color: #FFEBEE;
+	color: #F44336;
+}
+
+.card-head .card-profile {/*顶部头像*/
+	border-radius: 50%;
+	margin-right: 16px;
+}
+
+.card-profile {
+	overflow: hidden;
+}
+.card-head-text {/*顶部用户信息*/
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 0;
+}
+.card .user-name {
+	flex: 1 0 100%;
+	font-size: .875em;
+	display: flex;
+	align-items: center;
+}
+.card .card-comments .user-name:before {
+	content: '';
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+	margin-right: 4px;
+	margin-bottom: 2px;/*为了平衡位置*/
+	background: #BBDEFB;
+}
+.card .user-desc {
+	font-size: .875em;
+	color: rgba(0,0,0,.54);
+}
+.user-desc {
+	color: rgba(0,0,0,.54);
+	display: flex;
+	align-items: center;
+}
+
+#page-edit .user-desc {
+	margin-left: 4px;
+}
+#page-edit .user-desc:before {
+	content: '';
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	border: 2px solid rgba(0,0,0,.38);
+	border-width: 2px 2px 0 0;
+	transform: rotate(45deg);
+	margin: 8px;
+}
+
+.card .user-name {
+	font-weight: 700;
+}
+.card .card-content {
+}
+.card .card-content p {
+	font-size: 1em;
+	padding: 0 16px;
+}
+.card .card-content-image {
+	flex: 1 0 100%;
+	max-height: 200px;/*16:9*/;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+.card .card-content-image img{
+	width: 100%!important;
+	height: auto!important;
+}
+.card-comments {
+	padding: 8px 16px;
+	border-top: .5px solid rgba(0,0,0,.12);
+}
+.card-comments .comment {
+	font-size: .875em;
+	color: rgba(0,0,0,.87);
+	white-space: nowrap;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.card .card-head-text {/*卡片显示用户信息的头部*/
+	
 }
 
 .flat-button {
@@ -112,11 +281,19 @@ svg {
 	background: rgba(0,0,0,.12);
 }
 
+.raised-button.primary {
+	color: #fff;
+	background: rgb(66,133,244);
+	padding: 6px 16px;
+	border-radius: 2px;
+	box-shadow: 0 0 2px rgba(0,0,0,.12), 0 2px 4px rgba(0,0,0,.24);
+}
+
 .tabs {
 	border: 1px solid;
 	border-radius: 4px;
 	overflow: hidden;
-	color: #1788e8;
+	color: #2979FF;
 	font-size: .875rem;
 }
 .tabs a {
@@ -129,16 +306,16 @@ svg {
 	text-align: center;
 }
 .tabs a:first-child {
-	background: #1788e8;
+	background: #2979FF;
 	color: #fff;
 }
 
 .main-nav {
 	display: flex;
 	width: 100%;
-	padding: 4px 0;
 	position: fixed;
 	bottom: 0;
+	left: 0;
 	border-top: 1px solid #ddd;
 	background: #fff;
 	color: rgba(0,0,0,.38);
@@ -152,15 +329,19 @@ svg {
 	flex: 1;
 	flex-wrap: wrap;
 	justify-content: center;
+	color: rgba(0,0,0,.54);
+}
+.main-nav .nav-toggle.curr {
+	color: #2979FF;
 }
 
 .main-nav input:checked+.nav-toggle {
-	color: #1788E8;
+	color: #2979FF;
 }
 
 .nav-toggle svg {
-	width: 1.5em;
-	height: 1.5em;
+	width: 32px;
+	height: 32px;
 	fill: currentcolor;
 	flex: 1 0 100%;
 }
@@ -179,7 +360,7 @@ svg {
 }
 
 .top {
-	height: 44px;
+	height: 48px;
 	font-size: 16px;
 	font-weight: 500;
 	display: flex;
@@ -189,9 +370,10 @@ svg {
 	border-bottom: .5px solid rgba(0,0,0,.1);
 	padding: 8px 16px;
 	position: fixed;
-	left: 0;
 	top: 0;
+	left: 0;
 	width: 100%;
+	z-index: 6;
 }
 .top-transparent {
 	background: transparent;
@@ -232,18 +414,39 @@ svg {
 }
 .card-user-profile {
 	margin-right: 8px;
+	border-radius: 50%;
+	overflow: hidden;
+	background: #90CAF9;
+	display: flex;
+	border: .5px solid rgba(0,0,0,.05)
 }
 .card-user-profile img {
-	border-radius: 50%;
+	/*border-radius: 50%;*/
+	visibility: hidden;
 }
 
 .card-tags {
 }
 
 .tag {
-	border: .5px solid rgba(0,0,0,.1);
+	border: .5px solid;
 	padding: .1em .4em;
 	border-radius: 2px;
+}
+.tag1 {
+	color: #4DD0E1;
+}
+.tag2 {
+	color: #81C784;
+}
+.tag3 {
+	color: #FFD54F;
+}
+.tag4 {
+	color: #FF8A65;
+}
+.tag5 {
+	color: #4FC3F7;
 }
 
 .card-content {
@@ -258,7 +461,7 @@ svg {
 }
 .card-content p {
 	font-size: 0.875rem;
-	color: rgba(0,0,0,.54);
+	color: rgba(0,0,0,.87);
 	margin: 8px 0;
 }
 .card-content img {
@@ -306,17 +509,20 @@ ul.cell li p.cell-desc {
 
 ul.cell svg {
 	flex: 0 1 auto;
-	color: rgb(250,118,77);
+	color: #fff;
+	border-radius: 50%;
+	padding: 4px;
+	background-color: rgb(250,118,77);
 	margin-right: 1em;
 }
 ul.cell:last-child li:nth-child(1) svg {
-	color: rgb(87,161,235);
+	background-color: rgb(87,161,235);
 }
 ul.cell:last-child li:nth-child(2) svg {
-	color: rgb(255,186,26);
+	background-color: rgb(255,186,26);
 }
 ul.cell:last-child li:nth-child(3) svg {
-	color: rgb(122,209,100);
+	background-color: rgb(122,209,100);
 }
 
 .card-profile {
@@ -342,4 +548,21 @@ ul.cell:last-child li:nth-child(3) svg {
 	text-align: center;
 	margin-top: 1em;
 	font-size: 16px;
+}
+
+/*心得分享*/
+.edit-area textarea {
+	width: 100%;
+	height: 10em;
+	padding: 24px;
+	border: none;
+	font-size: 18px;
+	outline: none;
+}
+.edit-area .tools {
+	padding: 8px 16px;
+}
+.edit-area .tools a {
+	color: rgba(0,0,0,.54);
+	margin: 8px;
 }
