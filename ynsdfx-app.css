@@ -40,10 +40,10 @@ svg {
 	width: 100%;
 	height: 100%;
 	overflow-y: auto; 
-	border-top: 2px solid #2979FF;/*flyme blue*/
+	border-top: 2px solid #2979FF;
 	border: none;
 	padding-top: 64px;
-	padding-bottom: 73px;
+	padding-bottom: 100px;
 	flex: 1 0 100%;
 	position: relative;
 }
@@ -53,7 +53,7 @@ svg {
 	top: 0;
 	left: 0;
 	display: none;
-	transform: translateY(-150px);
+	transform: translateY(-170px);
 	/*opacity: 0;*/
 	height: 0px;
 	overflow: hidden;
@@ -123,6 +123,88 @@ svg {
 	flex-wrap: wrap;
 	background: #fff;
 }
+.card-flat.slider {
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	max-height: 500px;
+}
+.card-flat.slider .slider-images {
+	padding: 0;
+	line-height: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card-flat.slider .slider-images img {
+	flex: none;
+	width: 115%;
+	height: auto;
+}
+.slider-control {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	position: absolute;
+	bottom: 8px;
+	left: 0;
+}
+.card-flat.slider .slider-control span {
+	width: 8px;
+	height: 8px;
+	margin: 4px;
+	border-radius: 50%;
+	background: rgba(255,255,255,.84);
+}
+.card-flat.slider .slider-control span:first-child {
+	background: #FFD54F;
+}
+.slider-title {
+	background: rgba(0,0,0,.8);
+	color: #fff;
+	padding: 8px;
+	position: absolute;
+	top: 1em;
+	left: 24px;
+}
+
+.index-icons {
+	display: flex;
+	justify-content: space-between;
+}
+.index-icons a {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-size: .875em;
+	color: rgba(0,0,0,.38);
+}
+.index-icons span {
+	flex: 1 0 100%;
+	text-align: center;
+}
+.index-icons a:before {
+	content: '';
+	width: 56px;
+	height: 56px;
+	background: tomato;
+	border-radius: 50%;
+	margin-bottom: 8px;
+}
+.index-icons a:nth-child(1):before {
+	background: linear-gradient(#FCC332,#F5B547);
+}
+.index-icons a:nth-child(2):before {
+	background: linear-gradient#EE6849,#DE5452);
+}
+.index-icons a:nth-child(3):before {
+	background: linear-gradient(#169BDE,#3186E0);
+}
+.index-icons a:nth-child(4):before {
+	background: linear-gradient(#7B6AFE,#5846F0);
+}
+
 .card:after {/*细细的描边*/
 	/*content: '';*/
 	position: absolute;
@@ -168,13 +250,13 @@ svg {
 	padding: 8px 16px;
 	background-color: rgba(0,0,0,.05);
 }
-.card.notification:nth-child(2) .card-head {/*第一个元素是顶栏*/
+.card.notification:nth-child(4) .card-head {/*第一个元素是顶栏*/
 	background-color: #E3F2FD;
 	color: #2979FF;
-}.card.notification:nth-child(3) .card-head {
+}.card.notification:nth-child(5) .card-head {
 	background-color: #FFF8E1;
 	color: #FFC400;
-}.card.notification:nth-child(4) .card-head {
+}.card.notification:nth-child(6) .card-head {
 	background-color: #FFEBEE;
 	color: #F44336;
 }
@@ -284,6 +366,7 @@ svg {
 .raised-button.primary {
 	color: #fff;
 	background: rgb(66,133,244);
+	background: #2979FF; 
 	padding: 6px 16px;
 	border-radius: 2px;
 	box-shadow: 0 0 2px rgba(0,0,0,.12), 0 2px 4px rgba(0,0,0,.24);
