@@ -42,7 +42,7 @@ svg {
 	overflow-y: auto; 
 	border-top: 2px solid #2979FF;/*flyme blue*/
 	border: none;
-	padding-top: 48px;
+	padding-top: 64px;
 	padding-bottom: 73px;
 	flex: 1 0 100%;
 	position: relative;
@@ -57,7 +57,7 @@ svg {
 	/*opacity: 0;*/
 	height: 0px;
 	overflow: hidden;
-	transition: all .5s;
+	transition: all .3s;
 	/*animation: page .5s;*/
 	z-index: 8;
 }
@@ -294,6 +294,7 @@ svg {
 	border-radius: 4px;
 	overflow: hidden;
 	color: #2979FF;
+	color: #fff;
 	font-size: .875rem;
 }
 .tabs a {
@@ -306,8 +307,10 @@ svg {
 	text-align: center;
 }
 .tabs a:first-child {
-	background: #2979FF;
-	color: #fff;
+	/*background: #2979FF;*/
+	/*color: #fff;*/
+	background: #fff;
+	color: #2979FF;
 }
 
 .main-nav {
@@ -361,12 +364,14 @@ svg {
 
 .top {
 	height: 48px;
+	height: 64px;
 	font-size: 16px;
 	font-weight: 500;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
 	background: #fff;
+	background: #2979ff;
 	border-bottom: .5px solid rgba(0,0,0,.1);
 	padding: 8px 16px;
 	position: fixed;
@@ -383,7 +388,11 @@ svg {
 	background: #fff;
 	border: none;
 }
+.top a{
+	color: #fff;
+}
 .top h1 {
+	color: #fff;
 	font-size: 1em;
 	flex: 1;
 	font-weight: 700;
